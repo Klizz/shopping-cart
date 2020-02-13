@@ -1,24 +1,20 @@
 import React from "react";
-import products from "./Products.js";
 import Product from "./ProductList.js";
 
-const ShoppingCart = () => {
-  const prod = products.map((products, idx) => (
-    <Product info={products} key={idx} />
+const ShoppingCart = props => {
+
+  const prod = props.items.map(items => (
+    <Product info={items} key={items.id} />
   ));
 
   if (prod.length > 0) {
-      return(
-        <div className="container">
-            {prod}
-        </div>
-      )
+    return <div>{prod}</div>;
   } else {
-      return (
-          <div className="container">
-              <h1>No hay nada en tu carrito :( </h1>
-          </div>
-      );
+    return (
+      <div>
+        <h1>No hay nada en tu carrito :( </h1>
+      </div>
+    );
   }
 };
 
