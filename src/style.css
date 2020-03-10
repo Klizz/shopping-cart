@@ -9,8 +9,8 @@ h2 {
     text-shadow: 2px 2px 2px #FFF;
 }
 
-.card {
-    height: 600px;
+.col {
+    margin-bottom: 70px;
 }
 
 .total-box {

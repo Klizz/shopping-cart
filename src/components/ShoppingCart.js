@@ -8,7 +8,9 @@ class ShoppingCart extends Component {
       products: Product
     };
   }
+
   render() {
+    
     const prod = this.props.items.map(items => (
       <Product info={items} key={items.id} />
     ));

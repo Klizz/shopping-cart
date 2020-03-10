@@ -1,4 +1,5 @@
 import React from "react";
+import AddToCart from './AddToCart';
 
 const Product = (props) => (
   <div className="col s4">
@@ -10,6 +11,9 @@ const Product = (props) => (
     <div className="card-content">
       <h5 className="text-info teal-text">Precio: ${props.info.price} </h5>
       <p>Descripción: {props.info.description} </p>
+      <div className="card-action">
+      < AddToCart />
+      </div>
     </div>
   </div>
   </div>

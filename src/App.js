@@ -9,7 +9,7 @@ const cartItems = [
   products[2],
   products[3],
   products[4],
-  products[5],
+  products[5]
 ];
 
 const total = cartItems.reduce(function(x, y) {
